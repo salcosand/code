@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/TopicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="66dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="Topic Button"
+        android:text="T"
+        android:textSize="15pt" />
+
+    <Button
+        android:id="@+id/NewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TopicButton"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="New Button"
+        android:text="N"
+        android:textSize="15pt" />
+
+    <Button
+        android:id="@+id/OrganisationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TopicButton"
+        android:layout_below="@+id/NewButton"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button"
+        android:contentDescription="Organisation Button"
+        android:text="O"
+        android:textSize="15pt" />
+
+</RelativeLayout>

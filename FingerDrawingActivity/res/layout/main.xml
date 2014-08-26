@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.drawing.application.DrawView
+        android:id="@+id/drawView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/background_light"
+        android:scaleType="matrix" >
+    </com.drawing.application.DrawView>
+
+    <LinearLayout
+        android:id="@+id/alternativeWordsPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/firstWordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+        </Button>
+
+        <Button
+            android:id="@+id/secondWordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+        </Button>
+
+        <Button
+            android:id="@+id/thirdWordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+        </Button>
+
+        <Button
+            android:id="@+id/fourthWordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+        </Button>
+
+        <Button
+            android:id="@+id/fithWordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+        </Button>
+
+        <Button
+            android:id="@+id/sixthWordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/annotateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5px"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Annotation Mode Button"
+            android:src="@drawable/annotation_symbol"
+            android:visibility="gone" >
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/modifyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Modification Mode Button"
+            android:src="@drawable/modify_symbol"
+            android:visibility="gone" >
+
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5px"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/ungroupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:contentDescription="Ungroup Button"
+                android:src="@drawable/unlink_symbol" >
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/groupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:contentDescription="Group Button"
+                android:src="@drawable/link_symbol_selector" >
+            </ImageButton>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/undoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5px"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Undo Button"
+            android:src="@drawable/arrow_symbol_selector" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0px"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Clear Button"
+            android:src="@drawable/delete_symbol_selector" >
+        </ImageButton>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/topicTypeSelectionButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible" >
+
+        <ImageButton
+            android:id="@+id/TopicButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="51dp"
+            android:background="@drawable/custom_button_green"
+            android:contentDescription="Topic Button"
+            android:padding="10dp"
+			android:src="@drawable/new_topic_symbol" />
+
+        <ImageButton
+            android:id="@+id/NewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/TopicButton"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            
+            android:background="@drawable/custom_button_orange"
+            android:contentDescription="New Button"
+            android:src="@drawable/new_collection_symbol" />
+
+        <ImageButton
+            android:id="@+id/OrganisationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/NewButton"
+            android:background="@drawable/custom_button_blue"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:contentDescription="Organization Button"
+            android:padding="10dp"
+            android:src="@drawable/new_organization_symbol"
+ />
+
+        <ImageButton
+            android:id="@+id/SelectionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/TopicButton"
+            android:layout_alignTop="@id/NewButton"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Selection Button"
+            android:src="@drawable/selection_symbol" />
+    </RelativeLayout>
+
+</RelativeLayout>

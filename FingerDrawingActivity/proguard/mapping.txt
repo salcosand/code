@@ -1,0 +1,615 @@
+com.drawing.application.AnnotationView -> com.drawing.application.AnnotationView:
+    boolean firstPointOfPath -> a
+    android.graphics.PointF mid -> b
+    float oldDist -> c
+    float scale -> d
+    boolean scaleView -> e
+    com.drawing.datastructure.DrawingComponent objectToAnnotate -> f
+    android.graphics.Paint annotationPaint -> g
+    void initializeButtonListeners() -> a
+    void onDraw(android.graphics.Canvas) -> onDraw
+    com.drawing.datastructure.DrawingComposite getDrawingObjects() -> b
+    void setDrawingObjects(com.drawing.datastructure.DrawingComposite) -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    void configureButtonActivation() -> c
+    void assignAnnotationToSelectedObject() -> d
+com.drawing.application.AnnotationView$1 -> com.drawing.application.a:
+    com.drawing.application.AnnotationView this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.AnnotationView$2 -> com.drawing.application.b:
+    com.drawing.application.AnnotationView this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.AnnotationView$3 -> com.drawing.application.c:
+    com.drawing.application.AnnotationView this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.DataStorageHelper -> com.drawing.application.d:
+    java.lang.String FILENAME -> a
+    java.lang.String MATRIXFILENAME -> b
+    java.lang.String FILENAMESLIST -> c
+    java.lang.String TYPELIST -> d
+    boolean storeData(android.content.Context,com.drawing.application.DrawView,java.lang.String) -> a
+    boolean deleteData(android.content.Context,java.lang.String) -> a
+    com.drawing.datastructure.DrawingComposite loadData(android.content.Context,java.lang.String) -> b
+    java.util.ArrayList loadTypeList(android.content.Context) -> a
+    boolean saveTypeList(android.content.Context,java.util.ArrayList) -> a
+com.drawing.application.DrawView -> com.drawing.application.DrawView:
+    android.widget.LinearLayout alternativeWordListView -> S
+    android.widget.RelativeLayout topicTypeSelectionMenu -> T
+    float margin -> U
+    boolean scaleView -> V
+    java.util.List newPaths -> a
+    com.drawing.datastructure.ScaledPathArray annotationArray -> b
+    com.drawing.datastructure.CustomPath tempPath -> c
+    android.graphics.Paint defaultPaint -> d
+    android.graphics.Paint textPaint -> e
+    boolean firstPointOfPath -> f
+    android.graphics.PointF mid -> g
+    float oldDist -> h
+    float scale -> i
+    float downTime -> j
+    com.drawing.gestures.Recognizer recognizer -> k
+    com.drawing.gestures.Result result -> l
+    java.util.List pointsForRecognizer -> m
+    android.graphics.Paint debugPaint -> n
+    android.graphics.Paint debugFilledPaint -> o
+    java.util.List debugList -> p
+    int[] canvasColorARGB -> W
+    boolean ANNOTATIONMODE -> Z
+    boolean changeAlternatives -> aa
+    java.util.List tempHandwritingPaths -> ab
+    com.drawing.datastructure.TopicObject selectedTopicObject -> ac
+    boolean gestureRecognitionEnabled -> ad
+    android.graphics.RectF gradientRect -> ae
+    android.graphics.Paint gradientPaint -> af
+    android.graphics.RadialGradient gradient -> ag
+    android.graphics.RectF tempBoundingFillBg -> ah
+    android.graphics.RectF tempBoundingNewPath -> ai
+    android.graphics.RectF tempBoundingDebug -> aj
+    boolean drawDebugRegions -> ak
+    float[] m3 -> al
+    float[] m2 -> am
+    float[] personObjectAnchor -> an
+    com.drawing.datastructure.CustomPath drawPath -> ao
+    boolean firstBackup -> q
+    java.util.Set mCurrMessage -> ap
+    int nStrokeCnt -> aq
+    int mCurrStroke -> ar
+    android.os.Handler mHandler -> as
+    com.drawing.datastructure.TopicType selectedTopicType -> r
+    void onDraw(android.graphics.Canvas) -> onDraw
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+    void calculateVisualBundingRect(com.drawing.datastructure.CustomPath) -> b
+    void recognizeHandwriting(java.util.List,com.drawing.datastructure.CustomPath) -> a
+    void updatePath(com.drawing.datastructure.CustomPath) -> a
+    void clear() -> a
+    void undo() -> d
+    void toggleModificationMode(boolean) -> a
+    void cleanView() -> e
+    void configureButtonActivation() -> c
+    android.os.Handler getHandler() -> getHandler
+    void initializeAlternativeWordListView(android.widget.LinearLayout) -> a
+    void initializeTypeSelectionMenu(android.widget.RelativeLayout) -> a
+    void hideSuggestionButtons() -> q
+    void confirmWord(java.lang.String) -> a
+    void confirmPlaceholderWord() -> f
+    com.drawing.datastructure.DrawingComposite getDrawingObjects() -> b
+    void setDrawingObjects(com.drawing.datastructure.DrawingComposite) -> a
+    void adjustViewPort() -> g
+    void addContact(com.drawing.datastructure.PersonObject) -> a
+    void groupHighlightedObjects() -> h
+    void ungroupHighlightedObjects() -> i
+    void recalculateScreenSize() -> j
+    void access$0(com.drawing.application.DrawView,java.util.Set) -> a
+    void access$1(com.drawing.application.DrawView,boolean) -> a
+    java.util.Set access$2(com.drawing.application.DrawView) -> a
+    boolean access$3(com.drawing.application.DrawView) -> b
+    android.widget.LinearLayout access$4() -> k
+    boolean access$5(com.drawing.application.DrawView) -> c
+    void access$6$3c279fd7(com.drawing.application.DrawView) -> d
+    java.util.List access$7(com.drawing.application.DrawView) -> e
+    void access$8(com.drawing.application.DrawView,com.drawing.datastructure.TopicObject) -> a
+    float[] access$9(com.drawing.application.DrawView) -> f
+    void access$10(com.drawing.application.DrawView) -> g
+    void access$11(com.drawing.application.DrawView,java.lang.String,com.drawing.datastructure.DrawingCompositeWord) -> a
+    com.drawing.datastructure.TopicObject access$12(com.drawing.application.DrawView) -> h
+    void access$13(com.drawing.application.DrawView,com.drawing.datastructure.TopicType) -> a
+    android.widget.RelativeLayout access$14() -> l
+com.drawing.application.DrawView$1 -> com.drawing.application.e:
+    com.drawing.application.DrawView this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.drawing.application.DrawView$2 -> com.drawing.application.f:
+    com.drawing.application.DrawView this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.DrawView$3 -> com.drawing.application.g:
+    com.drawing.application.DrawView this$0 -> a
+    void onClick(android.view.View) -> onClick
+    com.drawing.application.DrawView access$0(com.drawing.application.DrawView$3) -> a
+com.drawing.application.DrawView$3$1 -> com.drawing.application.h:
+    com.drawing.application.DrawView$3 this$1 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.drawing.application.DrawView$3$2 -> com.drawing.application.i:
+    com.drawing.application.DrawView$3 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.DrawView$3$3 -> com.drawing.application.j:
+    com.drawing.application.DrawView$3 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.DrawView$3$3$1 -> com.drawing.application.k:
+    com.drawing.application.DrawView$3$3 this$2 -> a
+    android.view.View val$createTypeView -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.DrawView$3$3$2 -> com.drawing.application.l:
+    com.drawing.application.DrawView$3$3 this$2 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.DrawView$3$3$3 -> com.drawing.application.m:
+    com.drawing.application.DrawView$3$3 this$2 -> a
+    android.view.View val$createTypeView -> b
+    void onClick(android.view.View) -> onClick
+com.drawing.application.DrawView$3$4 -> com.drawing.application.n:
+    com.drawing.application.DrawView$3 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.DrawView$RecognizerTask -> com.drawing.application.o:
+    boolean asyncGestureRecognition -> a
+    com.drawing.datastructure.CustomPath examinedPath -> b
+    android.graphics.Matrix examinedInverseTransformationMatrix -> c
+    int topicSizeThreshold -> d
+    com.drawing.application.DrawView this$0 -> e
+    int[] $SWITCH_TABLE$com$drawing$datastructure$GestureTypes -> f
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+    int[] $SWITCH_TABLE$com$drawing$datastructure$GestureTypes() -> a
+com.drawing.application.FingerDrawingActivity -> com.drawing.application.FingerDrawingActivity:
+    com.drawing.application.FingerDrawingActivity$OnInkViewListener mListener -> g
+    java.lang.String[] filenames -> h
+    boolean mRecoInit -> i
+    com.phatware.android.RecoInterface.RecognizerService mBoundService -> a
+    boolean boundToService -> j
+    android.content.ServiceConnection mConnection -> k
+    com.drawing.application.DrawView drawView -> b
+    com.drawing.application.AnnotationView annotationView -> c
+    android.widget.ImageButton annotateButton -> l
+    android.widget.ImageButton modifyButton -> m
+    android.widget.ImageButton undoButton -> n
+    android.widget.ImageButton clearButton -> o
+    android.widget.ImageButton groupButton -> p
+    android.widget.ImageButton ungroupButton -> q
+    boolean annotationModeEnabled -> r
+    java.util.ArrayList topicTypeList -> d
+    java.lang.String selectedFileName -> e
+    java.lang.String selectedContactName -> f
+    void onConfigurationChanged(android.content.res.Configuration) -> onConfigurationChanged
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void onResume() -> onResume
+    void onBackPressed() -> onBackPressed
+    void onCreate(android.os.Bundle) -> onCreate
+    void toggleAnnotateMode() -> a
+    void initializeButtonListeners() -> c
+    void saveTypeList() -> b
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void createNewContact(java.lang.String) -> a
+    void onAttachedToWindow() -> onAttachedToWindow
+    void showLoadDialog() -> d
+    void deleteData(java.lang.String) -> b
+    void showMatchingContactsSelection(java.util.ArrayList,com.drawing.datastructure.DrawingCompositeWord) -> a
+    com.drawing.application.FingerDrawingActivity$OnInkViewListener access$0(com.drawing.application.FingerDrawingActivity) -> a
+    void access$1$8f92bae(com.drawing.application.FingerDrawingActivity) -> b
+    java.lang.String[] access$2(com.drawing.application.FingerDrawingActivity) -> c
+    void access$3(com.drawing.application.FingerDrawingActivity,java.lang.String) -> a
+    void access$4(com.drawing.application.FingerDrawingActivity,java.lang.String) -> b
+    void access$5(com.drawing.application.FingerDrawingActivity) -> d
+    void access$6(com.drawing.application.FingerDrawingActivity,java.lang.String) -> c
+    void access$7(com.drawing.application.FingerDrawingActivity,com.drawing.datastructure.PersonObject,com.drawing.datastructure.DrawingCompositeWord) -> a
+com.drawing.application.FingerDrawingActivity$1 -> com.drawing.application.p:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+com.drawing.application.FingerDrawingActivity$10 -> com.drawing.application.q:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    android.widget.EditText val$input -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$11 -> com.drawing.application.r:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$12 -> com.drawing.application.s:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    java.lang.String val$filename -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$13 -> com.drawing.application.t:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$14 -> com.drawing.application.u:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.drawing.application.FingerDrawingActivity$15 -> com.drawing.application.v:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$16 -> com.drawing.application.w:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$17 -> com.drawing.application.x:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$18 -> com.drawing.application.y:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+com.drawing.application.FingerDrawingActivity$19 -> com.drawing.application.z:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    java.util.ArrayList val$selectableContacts -> b
+    com.drawing.datastructure.DrawingCompositeWord val$contactWordToDelete -> c
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$2 -> com.drawing.application.aa:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.FingerDrawingActivity$20 -> com.drawing.application.ab:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$21 -> com.drawing.application.ac:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$3 -> com.drawing.application.ad:
+    boolean enabled -> b
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.FingerDrawingActivity$4 -> com.drawing.application.ae:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.FingerDrawingActivity$5 -> com.drawing.application.af:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.FingerDrawingActivity$6 -> com.drawing.application.ag:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.FingerDrawingActivity$7 -> com.drawing.application.ah:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.drawing.application.FingerDrawingActivity$8 -> com.drawing.application.ai:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    java.lang.String val$contactName -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$9 -> com.drawing.application.aj:
+    com.drawing.application.FingerDrawingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.drawing.application.FingerDrawingActivity$OnInkViewListener -> com.drawing.application.ak:
+    android.os.Handler getHandler() -> getHandler
+com.drawing.application.GeneralView -> com.drawing.application.GeneralView:
+    com.drawing.application.FingerDrawingActivity fda -> s
+    com.drawing.datastructure.DrawingComposite drawingObjects -> t
+    android.graphics.Matrix matrix -> u
+    android.graphics.Matrix savedMatrix -> v
+    android.graphics.Matrix backupTransformationMatrix -> w
+    android.graphics.Matrix inverse -> x
+    android.graphics.Matrix backupInverse -> y
+    com.drawing.datastructure.CustomPath drawPath -> z
+    com.drawing.datastructure.CustomPath tempPath -> A
+    int screenWidth -> B
+    int screenHeight -> C
+    int canvasHeight -> D
+    float historicalX -> E
+    float historicalY -> F
+    float x -> G
+    float y -> H
+    float historicalEventTime -> I
+    boolean calculateCanvasSize -> J
+    boolean doubleTap -> K
+    boolean firstBackup -> L
+    android.graphics.PointF start -> M
+    int mode -> N
+    android.graphics.Paint paint -> O
+    android.graphics.Paint highlightedPaint -> P
+    com.drawing.datastructure.DrawingComponent lastHighlightedComponent -> Q
+    java.util.List newPaths -> R
+    void backupCurrentTransformationMatrix() -> m
+    void restoreBackupTransformationMatrix() -> n
+    void updatePath(com.drawing.datastructure.CustomPath) -> a
+    void configureButtonActivation() -> c
+    void adjustViewPort() -> g
+    com.drawing.datastructure.DrawingComposite getDrawingObjects() -> b
+    void setDrawingObjects(com.drawing.datastructure.DrawingComposite) -> a
+    void midPoint(android.graphics.PointF,android.view.MotionEvent) -> a
+    float spacing(android.view.MotionEvent) -> a
+    float[][] getMatrices() -> o
+    void restoreMatrices(float[][]) -> a
+    void removeHighlightFromPaths() -> p
+com.drawing.application.ModificationView -> com.drawing.application.ModificationView:
+    void configureButtonActivation() -> c
+com.drawing.application.PathRetrieverTask -> com.drawing.application.al:
+    com.drawing.application.GeneralView view -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.drawing.datastructure.CustomPath -> com.drawing.a.a:
+    int color -> a
+    float maxX -> b
+    float maxY -> c
+    float minX -> d
+    float minY -> e
+    com.drawing.datastructure.GestureTypes type -> f
+    java.util.List vertices -> g
+    java.util.List originalVertices -> h
+    boolean highlighted -> i
+    java.util.UUID uid -> j
+    com.drawing.gestures.Point[] getOriginalVertices() -> a
+    java.util.UUID getUid() -> b
+    boolean isHighlighted() -> c
+    void setHighlighted(boolean) -> a
+    com.drawing.datastructure.GestureTypes getType() -> d
+    void setType(com.drawing.datastructure.GestureTypes) -> a
+    void lineTo(float,float) -> lineTo
+    void moveTo(float,float) -> moveTo
+    java.util.List getVertices() -> e
+    void setVertices(java.util.List) -> a
+    java.util.List transformVertices(java.util.List,android.graphics.Matrix) -> a
+    void applyTransformation(android.graphics.Matrix,android.graphics.Matrix) -> a
+    void transform(android.graphics.Matrix) -> transform
+    int getColor() -> f
+    void setColor(int) -> a
+com.drawing.datastructure.DrawingComponent -> com.drawing.a.b:
+    com.drawing.datastructure.DrawingComposite parent -> a
+    com.drawing.datastructure.CustomPath path -> b
+    com.drawing.datastructure.DrawingComponent annotation -> c
+    float[] pathMatrixValues -> d
+    boolean highlighted -> e
+    boolean grouped -> f
+    boolean isComposite -> g
+    boolean isRoot -> h
+    boolean isHighlighted() -> a
+    void setIsRoot$1385ff() -> b
+    void setHighlighted(boolean) -> a
+    boolean isGrouped() -> c
+    void setGrouped(boolean) -> b
+    com.drawing.datastructure.CustomPath getPath() -> d
+    void setPath(com.drawing.datastructure.CustomPath) -> a
+    com.drawing.datastructure.DrawingComponent getAnnotation() -> e
+    void setAnnotation(com.drawing.datastructure.DrawingComponent) -> a
+    com.drawing.datastructure.ScaledPathArray getPathList() -> f
+    java.util.ArrayList getAnnotationList() -> g
+    java.util.ArrayList getAnnotationPathList() -> h
+    com.drawing.datastructure.DrawingComponent getObjectByPathId(java.util.UUID) -> a
+    void addComponent(com.drawing.datastructure.DrawingComponent) -> b
+    void removeComponent(com.drawing.datastructure.DrawingComponent) -> c
+    void removeCompositeComponent(com.drawing.datastructure.DrawingComponent) -> d
+    void updatePath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> a
+    void updateGroupedPath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> b
+    void redrawPathsafterDeserialization(com.drawing.application.FingerDrawingActivity) -> a
+    float[] determineDrawnExtrema(float[]) -> a
+    boolean ContainsContactObjects() -> i
+    com.drawing.datastructure.DrawingComposite getParent() -> j
+    void setParent(com.drawing.datastructure.DrawingComposite) -> a
+com.drawing.datastructure.DrawingComposite -> com.drawing.a.c:
+    java.util.List children -> i
+    com.drawing.datastructure.ScaledPathArray localPathList -> k
+    boolean changed -> j
+    void deleteChildren() -> k
+    void setHighlighted(boolean) -> a
+    com.drawing.datastructure.CustomPath getPath() -> d
+    void addComponent(com.drawing.datastructure.DrawingComponent) -> b
+    void removeComponent(com.drawing.datastructure.DrawingComponent) -> c
+    void removeCompositeComponent(com.drawing.datastructure.DrawingComponent) -> d
+    java.util.List getChild() -> l
+    com.drawing.datastructure.ScaledPathArray getPathList() -> f
+    java.util.List getHighlightedComponents() -> m
+    java.util.ArrayList getAnnotationList() -> g
+    com.drawing.datastructure.DrawingComponent getObjectByPathId(java.util.UUID) -> a
+    void updatePath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> a
+    void updateGroupedPath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> b
+    void redrawPathsafterDeserialization(com.drawing.application.FingerDrawingActivity) -> a
+    float[] determineDrawnExtrema(float[]) -> a
+    boolean ContainsContactObjects() -> i
+    void drawContactObjects(android.graphics.Canvas,android.graphics.Matrix,android.graphics.Matrix,boolean) -> a
+    com.drawing.datastructure.DrawingCompositeWord retrieveWordMatch(android.graphics.RectF) -> a
+    java.util.ArrayList getLinearChildObjectList() -> n
+    java.util.ArrayList getAnnotationPathList() -> h
+com.drawing.datastructure.DrawingCompositeWord -> com.drawing.a.d:
+    com.drawing.datastructure.CustomPath path -> k
+    java.lang.String result -> l
+    android.graphics.Matrix matrix -> m
+    java.lang.String getResult() -> o
+    void updatePath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> a
+    void updateGroupedPath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> b
+    void applyTransformationAndHighlight(android.graphics.Matrix,android.graphics.Matrix,boolean) -> c
+    void setGrouped(boolean) -> b
+com.drawing.datastructure.DrawingGroup -> com.drawing.a.e:
+    void updatePath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> a
+    void setHighlighted(boolean) -> a
+com.drawing.datastructure.DrawingLeaf -> com.drawing.a.f:
+    com.drawing.datastructure.CustomPath getPath() -> d
+    com.drawing.datastructure.DrawingComponent getAnnotation() -> e
+    com.drawing.datastructure.ScaledPathArray getPathList() -> f
+    java.util.ArrayList getAnnotationList() -> g
+    com.drawing.datastructure.DrawingComponent getObjectByPathId(java.util.UUID) -> a
+    void addComponent(com.drawing.datastructure.DrawingComponent) -> b
+    void updatePath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> a
+    void updateGroupedPath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> b
+    void redrawPathsafterDeserialization(com.drawing.application.FingerDrawingActivity) -> a
+    boolean ContainsContactObjects() -> i
+    java.util.ArrayList getAnnotationPathList() -> h
+com.drawing.datastructure.DrawingWordLetter -> com.drawing.a.g:
+    com.drawing.datastructure.DrawingCompositeWord parent -> i
+    com.drawing.datastructure.DrawingCompositeWord getParent() -> k
+    void setParent(com.drawing.datastructure.DrawingCompositeWord) -> a
+    void setHighlighted(boolean) -> a
+    void updatePath(android.graphics.Matrix,android.graphics.Matrix,boolean) -> a
+    com.drawing.datastructure.DrawingComposite getParent() -> j
+com.drawing.datastructure.GestureTypes -> com.drawing.a.h:
+    com.drawing.datastructure.GestureTypes NOGESTURE -> a
+    com.drawing.datastructure.GestureTypes TOPIC -> b
+    com.drawing.datastructure.GestureTypes COMPANY -> c
+    com.drawing.datastructure.GestureTypes PERSON -> d
+    com.drawing.datastructure.GestureTypes EVENT -> e
+    com.drawing.datastructure.GestureTypes CHECK -> f
+    com.drawing.datastructure.GestureTypes NEWTYPE -> g
+    com.drawing.datastructure.GestureTypes ORGANIZATIONTYPE -> h
+    com.drawing.datastructure.GestureTypes TOPICTYPE -> i
+    com.drawing.datastructure.GestureTypes MATCHCONTACT -> j
+    com.drawing.datastructure.GestureTypes[] ENUM$VALUES -> k
+    com.drawing.datastructure.GestureTypes[] values() -> values
+    com.drawing.datastructure.GestureTypes valueOf(java.lang.String) -> valueOf
+com.drawing.datastructure.PersonObject -> com.drawing.a.i:
+    int MAXSIZE -> j
+    android.graphics.Bitmap contactPhoto -> k
+    android.graphics.Rect sourceRect -> l
+    android.graphics.Rect destinationRect -> m
+    android.graphics.Paint paint -> n
+    android.net.Uri imageUri -> o
+    java.lang.String contactName -> p
+    java.lang.String phoneNumber -> q
+    java.lang.String eMail -> r
+    float x -> s
+    float y -> t
+    int pictureSize -> u
+    java.lang.String stringImageUri -> v
+    float offset -> w
+    float textSize -> x
+    float textScale -> y
+    float[] points -> i
+    float scale -> z
+    int frameOffset -> A
+    java.lang.String getContactName() -> k
+    java.lang.String getPhoneNumber() -> l
+    java.lang.String geteMail() -> m
+    android.graphics.Bitmap getContactPhoto() -> n
+    void setContactPhoto(android.graphics.Bitmap) -> a
+    void drawContactObjects(android.graphics.Canvas,android.graphics.Matrix) -> a
+    void setPosition(float,float) -> a
+    com.drawing.datastructure.CustomPath generateVertices(float,float,int,int) -> a
+    void redrawPathsafterDeserialization(com.drawing.application.FingerDrawingActivity) -> a
+    android.net.Uri getImageUri() -> o
+    void setImageUri$757ab272() -> p
+com.drawing.datastructure.ScaledPathArray -> com.drawing.a.j:
+    java.util.List paths -> a
+    java.util.List scales -> b
+    com.drawing.datastructure.CustomPath getPath(int) -> a
+    java.util.List getPaths() -> a
+    java.util.List getScales() -> b
+    void setScales(java.util.List) -> a
+    com.drawing.datastructure.CustomPath[] getPathsArray() -> c
+    boolean ContainsHighlightedPath() -> d
+    void add(com.drawing.datastructure.ScaledPathArray) -> a
+com.drawing.datastructure.TopicObject -> com.drawing.a.k:
+    com.drawing.datastructure.TopicType type -> k
+    void setType(com.drawing.datastructure.TopicType) -> a
+com.drawing.datastructure.TopicType -> com.drawing.a.l:
+    java.lang.String name -> a
+    int color -> b
+    java.lang.String description -> c
+    int topicID -> d
+    java.lang.String shortcut -> e
+    int counter -> f
+    java.lang.String getName() -> a
+    int getColor() -> b
+    int generateID() -> c
+com.drawing.gestures.Operations -> com.drawing.b.a:
+    float Phi -> a
+    float Infinity -> b
+    com.drawing.gestures.Point tempPoint -> c
+    com.drawing.gestures.Point centroid -> d
+    com.drawing.gestures.Point Centroid(java.util.List) -> c
+    java.util.List RotateBy(java.util.List,float) -> b
+    java.util.List RotateToZero(java.util.List) -> a
+    java.util.List Resample(java.util.List,int) -> a
+    java.util.List ScaleToSquare(java.util.List,float) -> a
+    float DistanceAtBestAngle(java.util.List,com.drawing.gestures.Template,float,float,float) -> a
+    float DistanceAtAngle(java.util.List,com.drawing.gestures.Template,float) -> a
+    java.util.List TranslateToOrigin(java.util.List) -> b
+com.drawing.gestures.Point -> com.drawing.b.b:
+    float x -> a
+    float y -> b
+com.drawing.gestures.Recognizer -> com.drawing.b.c:
+    java.util.List Templates -> a
+    int NumTemplates -> b
+    int NumPoints -> c
+    float SquareSize -> d
+    float HalfDiagonal -> e
+    float AngleRange -> f
+    float AnglePrecision -> g
+    float Phi -> h
+    float Infinity -> i
+    com.drawing.gestures.Result Recognize(java.util.List) -> a
+    int AddTemplate(java.lang.String,java.util.List,com.drawing.datastructure.GestureTypes) -> a
+com.drawing.gestures.Rectangle -> com.drawing.b.d:
+    float X -> a
+    float Y -> b
+    float Width -> c
+    float Height -> d
+com.drawing.gestures.Result -> com.drawing.b.e:
+    java.lang.String Name -> a
+    com.drawing.datastructure.GestureTypes type -> b
+    float Score -> c
+    float Ratio -> d
+    java.lang.String getName() -> a
+    void setName(java.lang.String) -> a
+    com.drawing.datastructure.GestureTypes getType() -> b
+    void setType(com.drawing.datastructure.GestureTypes) -> a
+com.drawing.gestures.Template -> com.drawing.b.f:
+    java.lang.String Name -> a
+    java.util.List Points -> b
+    int NumPoints -> c
+    float SquareSize -> d
+    com.drawing.datastructure.GestureTypes Type -> e
+com.phatware.android.RecoInterface.RecognizerService -> com.phatware.android.RecoInterface.RecognizerService:
+    android.os.ConditionVariable mCondition -> b
+    boolean mRunRecognizerThread -> c
+    int mStrokeCnt -> d
+    boolean mReady -> e
+    android.os.Handler mHandler -> a
+    java.lang.Runnable mTask -> f
+    android.os.IBinder mBinder -> g
+    void onCreate() -> onCreate
+    void onDestroy() -> onDestroy
+    void dataNotify(int) -> a
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    boolean access$0(com.phatware.android.RecoInterface.RecognizerService) -> a
+    android.os.ConditionVariable access$1(com.phatware.android.RecoInterface.RecognizerService) -> b
+    boolean access$2(com.phatware.android.RecoInterface.RecognizerService) -> c
+    void access$3$24585573(com.phatware.android.RecoInterface.RecognizerService) -> d
+    int access$4(com.phatware.android.RecoInterface.RecognizerService) -> e
+com.phatware.android.RecoInterface.RecognizerService$1 -> com.phatware.android.RecoInterface.a:
+    com.phatware.android.RecoInterface.RecognizerService this$0 -> a
+    void run() -> run
+com.phatware.android.RecoInterface.RecognizerService$RecognizerBinder -> com.phatware.android.RecoInterface.b:
+    com.phatware.android.RecoInterface.RecognizerService this$0 -> a
+    com.phatware.android.RecoInterface.RecognizerService getService() -> a
+com.phatware.android.RecoInterface.WritePadAPI -> com.phatware.android.RecoInterface.WritePadAPI:
+    int recognizerInit(java.lang.String,int) -> recognizerInit
+    boolean resetLearner() -> resetLearner
+    boolean resetAutocorrector() -> resetAutocorrector
+    boolean resetUserDict() -> resetUserDict
+    boolean setDictionaryData(byte[],int) -> setDictionaryData
+    java.lang.String recognizeInkData(int,boolean,boolean,boolean) -> recognizeInkData
+    int stopRecognizer() -> stopRecognizer
+    int newStroke(int,int) -> newStroke
+    int addPixelToStroke(int,float,float) -> addPixelToStroke
+    int getStrokeCount() -> getStrokeCount
+    void resetInkData() -> resetInkData
+    java.lang.String languageName() -> languageName
+    int getResultColumnCount() -> getResultColumnCount
+    int getResultRowCount(int) -> getResultRowCount
+    java.lang.String getRecognizedWord(int,int) -> getRecognizedWord
+    int getRecognizedWeight(int,int) -> getRecognizedWeight
+    int getResultStrokesNumber(int,int) -> getResultStrokesNumber
+    boolean deleteStrokeByIndex(int) -> deleteStrokeByIndex
+    int getStrokeIndexByPoint(float,float) -> getStrokeIndexByPoint
+    boolean recoDeleteStrokeByIndex(int) -> a
+    int recoGetStrokeByPoint(float,float) -> a
+    int recoResultColumnCount() -> a
+    int recoResultRowCount(int) -> b
+    java.lang.String recoResultWord(int,int) -> a
+    int recoResulWeight(int,int) -> b
+    int recoResultStrokesNumber(int,int) -> c
+    java.lang.String getLanguageName() -> b
+    boolean recoResetAutocorrector() -> c
+    boolean recoResetLearner() -> d
+    boolean recoSetDict$49634b8b(byte[]) -> a
+    boolean recoResetUserDict() -> e
+    int recoStrokeCount() -> f
+    int recoAddPixel(int,float,float) -> a
+    void recoResetInk() -> g
+    int recoNewStroke$255f288() -> h
+    int recoStop() -> i
+    java.lang.String recoInkData$d681e06(int) -> c
+    int recoInit$505cff29(java.lang.String) -> a

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lightgreen">#FF8CC63F</color>
+    <color name="green">#FF0A803B</color>
+    <color name="lightblue">#FF25AAE1</color>
+    <color name="blue">#FF0F75BC</color>
+    <color name="lightorange">#FFF7941E</color>
+    <color name="orange">#FFF1592A</color>
+    <color name="pink">#FFED217C</color>
+    <color name="red">#FFBF1E2D</color>
+    <color name="highlight">#FF33B5E5</color>
+    
+    <!-- Chances by Florian Schneider -->
+    
+   	<!-- <color name="highlight">#FF51bce8</color>  -->
+	<color name="activeSketch">#979997</color>
+	<color name="sketch">#FF000000</color>
+	<color name="inactiveGray">#22d6d8d5</color>
+    
+</resources>

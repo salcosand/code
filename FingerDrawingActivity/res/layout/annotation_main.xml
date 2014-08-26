@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<com.drawing.application.AnnotationView xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/annotationView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/background_dark"
+        android:scaleType="matrix" >
+    
+
+</com.drawing.application.AnnotationView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/annotate_annotateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5px"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Annotation Mode Button"
+            android:src="@drawable/annotation_symbol" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/annotate_modifyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Modification Mode Button"
+            android:src="@drawable/modify_symbol" >
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+
+        <!--  <ImageButton
+            android:id="@+id/annotate_undoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5px"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Undo Button"
+            android:src="@drawable/arrow_symbol_selector" >
+        </ImageButton>  -->
+
+        <ImageButton
+            android:id="@+id/annotate_clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0px"
+            android:background="@drawable/custom_button"
+            android:contentDescription="Clear Button"
+            android:src="@drawable/delete_symbol_selector" >
+        </ImageButton>
+    </LinearLayout>
+
+
+</RelativeLayout>

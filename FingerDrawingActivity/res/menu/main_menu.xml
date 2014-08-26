@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    >
+
+<item android:id="@+id/clear_hw" android:showAsAction="always|withText" android:title="Confirm" android:icon="@drawable/ic_clear_hw3"></item>    
+<item android:id="@+id/load" android:showAsAction="ifRoom|withText" android:title="Load" android:icon="@drawable/content_load"></item>
+<item android:id="@+id/save" android:showAsAction="ifRoom|withText" android:title="Save" android:icon="@drawable/content_save"></item>
+
+</menu>

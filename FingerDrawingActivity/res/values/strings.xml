@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FingerDrawingActivity!</string>
+    <string name="app_name">SketchViz</string>
+    <string name="TopicTypeLabel">Topic</string>
+    <string name="NewTypeLabel">N</string>
+    <string name="OrganisationTypeLabel">Organization</string>
+    <string name="SelectionTypeLabel">Selection</string>
+
+</resources>

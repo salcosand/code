@@ -1,0 +1,225 @@
+com.drawing.application.DataStorageHelper:
+    28:28:public DataStorageHelper()
+com.drawing.application.DrawView:
+    static final int MINRECOGNITIONLENGTH
+    static final float threshold
+    private boolean drawGradient
+    227:228:public void setDrawGradient(boolean)
+    238:238:public boolean isDrawGradient()
+    1624:1632:public void toggleAnnotationMode(boolean)
+com.drawing.application.FingerDrawingActivity$OnInkViewListener:
+    public abstract void cleanView()
+com.drawing.application.GeneralView:
+    static final int MINSTROKELENGTH
+    protected static final int DEFAULT
+    protected static final int DRAW
+    protected static final int PANZOOM
+com.drawing.application.TopicTypeSelectionView
+com.drawing.datastructure.CustomConstants
+com.drawing.datastructure.CustomPath:
+    private static final long serialVersionUID
+    478:479:public void setUid(java.util.UUID)
+com.drawing.datastructure.DrawingComponent:
+    private static final long serialVersionUID
+    protected float[] annotationMatrixValues
+    public abstract int getComponentCount()
+com.drawing.datastructure.DrawingComposite:
+    private static final long serialVersionUID
+    1228:1234:public int getComponentCount()
+com.drawing.datastructure.DrawingCompositeWord:
+    private static final long serialVersionUID
+com.drawing.datastructure.DrawingLeaf:
+    private static final long serialVersionUID
+    45:45:public int getComponentCount()
+com.drawing.datastructure.DrawingWordLetter:
+    private static final long serialVersionUID
+com.drawing.datastructure.PersonObject:
+    private static final long serialVersionUID
+    154:155:public void setContactName(java.lang.String)
+    171:172:public void setPhoneNumber(java.lang.String)
+    188:189:public void seteMail(java.lang.String)
+com.drawing.datastructure.ScaledPathArray:
+    private static final long serialVersionUID
+    44:52:public void addPath(com.drawing.datastructure.CustomPath,android.graphics.Matrix)
+    61:66:public void removePath(com.drawing.datastructure.CustomPath)
+    74:79:public void removePath(int)
+    104:105:public void setPath(int,com.drawing.datastructure.CustomPath)
+    114:121:public android.graphics.Matrix getScale(int)
+    138:139:public void setPaths(java.util.List)
+    186:188:public void clear()
+com.drawing.datastructure.TopicObject:
+    private static final long serialVersionUID
+    36:36:public com.drawing.datastructure.TopicType getType()
+com.drawing.datastructure.TopicType:
+    private static final long serialVersionUID
+    63:64:public void setName(java.lang.String)
+    79:80:public void setColor(int)
+    87:87:public java.lang.String getDescription()
+    95:96:public void setDescription(java.lang.String)
+    103:103:public int getTopicID()
+    111:112:public void setTopicID(int)
+    118:118:public java.lang.String getShortcut()
+    125:126:public void setShortcut(java.lang.String)
+com.drawing.datastructure.TopicTypes
+com.drawing.gestures.Operations:
+    17:17:public Operations()
+    429:437:public static java.util.List subset(java.util.List,int,int)
+com.drawing.gestures.Point:
+    private static final long serialVersionUID
+    53:53:public float distance(com.drawing.gestures.Point)
+com.drawing.gestures.Recognizer:
+    565:566:void DeleteUserTemplates()
+com.drawing.test2.BuildConfig
+com.drawing.test2.R
+com.drawing.test2.R$attr
+com.drawing.test2.R$color
+com.drawing.test2.R$drawable
+com.drawing.test2.R$id
+com.drawing.test2.R$layout
+com.drawing.test2.R$menu
+com.drawing.test2.R$string
+com.phatware.android.RecoInterface.WritePadAPI:
+    public static final int FLAG_SEPLET
+    public static final int FLAG_USERDICT
+    public static final int FLAG_MAINDICT
+    public static final int FLAG_ONLYDICT
+    public static final int FLAG_STATICSEGMENT
+    public static final int FLAG_SINGLEWORDONLY
+    public static final int FLAG_INTERNATIONAL
+    public static final int FLAG_SUGGESTONLYDICT
+    public static final int FLAG_ANALYZER
+    public static final int FLAG_CORRECTOR
+    public static final int FLAG_SPELLIGNORENUM
+    public static final int FLAG_SPELLIGNOREUPPER
+    public static final int FLAG_NOSINGLELETSPACE
+    public static final int FLAG_ENABLECALC
+    public static final int FLAG_NOSPACE
+    public static final int FLAG_ALTDICT
+    public static final int FLAG_ERROR
+    public static final int GEST_NONE
+    public static final int GEST_DELETE
+    public static final int GEST_SCROLLUP
+    public static final int GEST_BACK
+    public static final int GEST_SPACE
+    public static final int GEST_RETURN
+    public static final int GEST_CORRECT
+    public static final int GEST_SPELL
+    public static final int GEST_SELECTALL
+    public static final int GEST_UNDO
+    public static final int GEST_SMALLPT
+    public static final int GEST_COPY
+    public static final int GEST_CUT
+    public static final int GEST_PASTE
+    public static final int GEST_TAB
+    public static final int GEST_MENU
+    public static final int GEST_LOOP
+    public static final int GEST_REDO
+    public static final int GEST_SCROLLDN
+    public static final int GEST_SAVE
+    public static final int GEST_SENDMAIL
+    public static final int GEST_OPTIONS
+    public static final int GEST_SENDTODEVICE
+    public static final int GEST_BACK_LONG
+    public static final int GEST_LEFTARC
+    public static final int GEST_RIGHTARC
+    public static final int GEST_ARCS
+    public static final int GEST_ALL
+    public static final int LANGUAGE_NONE
+    public static final int LANGUAGE_ENGLISH
+    public static final int LANGUAGE_FRENCH
+    public static final int LANGUAGE_GERMAN
+    public static final int LANGUAGE_SPANISH
+    public static final int LANGUAGE_ITALIAN
+    public static final int LANGUAGE_SWEDISH
+    public static final int LANGUAGE_NORWEGIAN
+    public static final int LANGUAGE_DUTCH
+    public static final int LANGUAGE_DANISH
+    public static final int LANGUAGE_PORTUGUESE
+    public static final int LANGUAGE_PORTUGUESEB
+    public static final int LANGUAGE_MEDICAL
+    public static final int LANGUAGE_FINNISH
+    public static final int HW_MAXWORDLEN
+    public static final int HW_SPELL_CHECK
+    public static final int HW_SPELL_LIST
+    public static final int HW_SPELL_USERDICT
+    public static final int HW_SPELL_USEALTDICT
+    public static final int HW_SPELL_IGNORENUM
+    public static final int HW_SPELL_IGNOREUPPER
+    public static final int MIN_RECOGNITION_WEIGHT
+    public static final int MAX_RECOGNITION_WEIGHT
+    public static final int RECMODE_GENERAL
+    public static final int RECMODE_NUM
+    public static final int RECMODE_CAPITAL
+    public static final int RECMODE_INTERNET
+    public static final int FLAG_IGNORECASE
+    public static final int FLAG_ALWAYS_REPLACE
+    public static final int FLAG_DISABLED
+    static com.phatware.android.RecoInterface.WritePadAPI$OnAutocorrectorListener onAutocorrectorWordListener
+    static com.phatware.android.RecoInterface.WritePadAPI$OnUserDictionaryListener onUserDictionaryListener
+    47:47:public WritePadAPI()
+    private static native int getRecognizerFlags()
+    private static native void setRecognizerFlags(int)
+    private static native int getRecognizerMode()
+    private static native void setRecognizerMode(int)
+    private static native void freeRecognizer()
+    public static native boolean reloadAutocorrector()
+    private static native boolean reloadUserDict()
+    private static native boolean reloadLearner()
+    public static native boolean saveWordList()
+    public static native boolean saveUserDict()
+    private static native boolean saveLearner()
+    private static native boolean resetRecognizer()
+    private static native boolean preRecognizeInkData(int)
+    private static native int detectGesture(int)
+    private static native boolean deleteLastStroke()
+    private static native boolean newUserDict()
+    private static native boolean addWordToUserDict(java.lang.String)
+    private static native boolean isWordInDict(java.lang.String)
+    private static native int languageID()
+    private static native boolean resetResult()
+    private static native java.lang.String getAutocorrectorWord(java.lang.String)
+    private static native boolean learnerAddNewWord(java.lang.String,int)
+    private static native boolean autocorrectorLearnWord(java.lang.String,java.lang.String,int,boolean)
+    private static native boolean learnerReplaceWord(java.lang.String,int,java.lang.String,int)
+    private static native int checkStrokeNewLine(int)
+    private static native boolean isPointStroke(int)
+    private static native boolean deleteStroke(int)
+    public static native int getEnumWordList()
+    public static native java.lang.String spellCheckWord(java.lang.String,boolean)
+    public static native int getEnumUserWordsList()
+    280:281:public void setOnAutocorrectorWordListener(com.phatware.android.RecoInterface.WritePadAPI$OnAutocorrectorListener)
+    284:284:public static int getWordList()
+    288:288:public static boolean saveUserDictionary()
+    292:292:public static boolean saveWords()
+    296:296:public static java.lang.String recoSpellCheckWord(java.lang.String,boolean)
+    300:300:public static int getEnumUserWords()
+    305:306:public static void setOnUserDictionaryListener(com.phatware.android.RecoInterface.WritePadAPI$OnUserDictionaryListener)
+    310:314:public static void onEnumWord(java.lang.String,java.lang.String,int)
+    317:321:public static void onEnumUserWords(java.lang.String)
+    324:324:public static boolean learnAutocorrectorWord(java.lang.String,java.lang.String,int,boolean)
+    328:328:public static boolean learnReplaceWord(java.lang.String,int,java.lang.String,int)
+    332:332:public static boolean learnNewWord(java.lang.String,int)
+    336:336:public static boolean recoResetResult()
+    360:360:public static java.lang.String autorecognizerWord(java.lang.String)
+    364:364:public static boolean isDictionaryWord(java.lang.String)
+    368:368:public static int getLanguageID()
+    380:380:public static boolean recoReloadAutocorrector()
+    384:384:public static boolean recoReloadUserDict()
+    388:388:public static boolean recoReloadLearner()
+    392:392:public static boolean recoNewDict()
+    396:396:public static boolean recoReset()
+    404:404:public static boolean recoSaveLearner()
+    412:412:public static boolean recoAddWord(java.lang.String)
+    420:420:public static int recoGesture(int)
+    424:424:public static boolean recoDeleteLastStroke()
+    444:444:public static int recoGetMode()
+    448:449:public static void recoSetMode(int)
+    452:452:public static int recoGetFlags()
+    456:457:public static void recoSetFlags(int)
+    468:468:public static boolean preRecoInkData(int)
+    476:477:public static void recoFree()
+    480:480:public static boolean strokeIsPoint(int)
+    484:489:public static boolean strokeIsNewLine(int,int,int)
+    493:493:public static boolean strokeDelete(int)
+com.phatware.android.RecoInterface.WritePadAPI$OnAutocorrectorListener
+com.phatware.android.RecoInterface.WritePadAPI$OnUserDictionaryListener
